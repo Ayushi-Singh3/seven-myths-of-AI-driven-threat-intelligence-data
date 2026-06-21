@@ -1,0 +1,31 @@
+On September 11, 2023, MGM resorts put out a statement on X that a “cyber security incident” was impacting some of its systems. The incident would lead to a $100 million dollar loss for the third quarter of 2023. The attack was put together by two separate organizations known as Scattered Spider and ALPHV. Faced with the significant disruption to their operations and the potential for further damage, the company had to take difficult decisions, including whether to pay millions in ransom to the attackers as its rival Caesars Entertainment did.
+Initial Discovery and Response
+It doesn’t take long to determine you are in the throngs of a ransomware attack. It is believed that the attackers first breached the network on September 8. The following day, the MGM security teams detected unusual activity and traffic on the company’s systems. The attack quickly escalated over the next couple of days as operations became publicly disrupted.
+MGM Resorts did take swift action which included shutting down certain systems to protect their data and infrastructure, which added further disruptions. Recognizing the severity of the situation, MGM quickly brought in third party agencies and leading cybersecurity experts to assist in containing and mitigating the attack. They also engaged law enforcement, launching an immediate investigation into the breach.
+How the MGM Cyber Attack Unfolded
+Social Engineering Tactics Used by Hackers
+To gain access to the MGM network, Scattered Spider launched a vishing social engineering attack that went something like this:
+1. Scattered Spider members researched MGM employees on LinkedIn, gathering information about their roles and identities.
+2. Using the gathered information, the attackers chose an MGM employee to impersonate.
+3. The hackers called MGM’s IT help desk, posing as the employee and successfully convinced the help desk into providing them with login credentials.
+4. Using the obtained credentials, Scattered Spider gained administrator privileges to MGM’s Okta and Azure tenant environments.
+5. The attackers used their high-level access to move laterally within MGM’s systems.
+It was at that time that Scattered Spider brought in ALPHV to deploy their ransomware-as-a-service (RaaS) software. They encrypted approximately 100 ESXi hypervisors within MGM’s network. These servers hosted thousands of virtual machines that supported critical hospitality systems such as gaming machines, online reservation systems, digital room keys and websites. ALPHV also claims to have exfiltrated 6 TB of customer information during this time, upon which they initiated negotiations with MGM to prevent the public release of the stolen data. ALPHV also threatened to disclose the exfiltrated information if an agreement could not be reached.
+MGM had been the subject of a similar help-desk-targeted social-engineering attack in 2019, and CISA had documented the technique in public advisories prior to 2023. At the time of the 2023 attack, the MGM IT help desk had no formal caller-verification procedure in place for high-privilege access requests despite this prior history.
+Impact on MGM Systems and Operations
+The effects of the cyberattack on MGM Resorts were immediately apparent with widespread disruptions across their organization:
+* Gambling operations were disrupted as slot machines went offline with displayed error messages
+* Hotel guests complained that their digital room keys stopped working.
+* Online reservation and booking systems were shut down
+* Mobile services were interrupted as the MGM app became completely inaccessible.
+* Email systems were affected
+* Restaurant reservations were disrupted
+Timeline of Events and Duration of the Attack
+The total duration of the attack was approximately 10 days. The timetable of the attack was as follows:
+* September 7, 2023: Scattered Spider launches a social engineering attack against Caesar’s Entertainment’s IT support vendor.
+* September 10, 2023: MGM Resorts begins experiencing system outages.
+* September 11, 2023: MGM publicly discloses the incident and launched an investigation after contacting law enforcement
+* September 12-13, 2023: Customers report various issues impacting their experience.
+* September 14, 2023: Scattered Spider claims to have stolen 6 terabytes of data from MGM Resorts and MGM begins restoring their systems.
+* September 20, 2023: MGM confirms full restoration of service to all its systems.
+The 2019 precedent and the absence of a verification procedure for high-privilege access requests indicate that the underlying failure was governance rather than technology. The technical controls necessary to prevent the attack — caller verification, hardened help-desk procedures for credential reset, audit of acquired or legacy access paths — were known to the organization and the industry but were not implemented as procedural requirements before the breach.
